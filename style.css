@@ -1245,6 +1245,155 @@ strong {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   ACHIEVEMENTS & CERTIFICATIONS
+   ═══════════════════════════════════════════════════════════════ */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.achievement-metric-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition);
+}
+
+.achievement-metric-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px -10px var(--accent-glow);
+}
+
+.achievement-metric-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  line-height: 1.2;
+}
+
+.achievement-metric-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-soft);
+  margin: 4px 0 6px;
+}
+
+.achievement-metric-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition);
+}
+
+.cert-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px -12px var(--accent-glow);
+}
+
+.cert-card--highlight {
+  border-color: rgba(255, 51, 51, 0.25);
+  background: linear-gradient(180deg, rgba(255, 51, 51, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.cert-card--wide {
+  grid-column: span 2;
+}
+
+.cert-card__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.cert-card__badge-icon {
+  color: var(--accent-soft);
+  display: flex;
+  align-items: center;
+}
+
+.cert-card__org {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--accent-soft);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.cert-card__title {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.cert-card__desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.cert-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cert-drive-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 24px;
+  background: linear-gradient(180deg, rgba(255, 51, 51, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 51, 51, 0.25);
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 35px -15px var(--accent-glow);
+}
+
+.cert-drive-callout__title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cert-drive-callout__desc {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
    SCROLL ANIMATIONS
    ═══════════════════════════════════════════════════════════════ */
 .fade-in {
@@ -1317,6 +1466,10 @@ strong {
   .formula-operator {
     transform: rotate(90deg);
   }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 680px) {
@@ -1334,12 +1487,25 @@ strong {
 
   .capabilities-grid,
   .categorized-skills,
+  .certifications-grid,
+  .achievements-grid,
   .more-projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .capability-card--wide {
+  .capability-card--wide,
+  .cert-card--wide {
     grid-column: span 1;
+  }
+
+  .cert-drive-callout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cert-drive-callout .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .exp-card {

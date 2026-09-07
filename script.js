@@ -133,6 +133,9 @@
     '.differentiator-box',
     '.skill-group',
     '.exp-card',
+    '.achievement-metric-card',
+    '.cert-card',
+    '.cert-drive-callout',
     '.mini-card',
     '.portfolio-card',
     '.contact-card'
