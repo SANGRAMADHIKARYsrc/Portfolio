@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResearchLens AI — Project Overview | Sangram Adhikary</title>
+  <meta name="description"
+    content="ResearchLens AI is an AI-powered academic research intelligence platform designed to transform how researchers discover, analyze, synthesize, and interact with scientific literature." />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <style>
+    /* Specific styles for Project Showcase Page */
+    .showcase-header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      transition: color var(--transition);
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      color: var(--accent-soft);
+    }
+
+    .showcase-hero {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .showcase-title {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -1px;
+      line-height: 1.15;
+    }
+
+    .showcase-tagline {
+      font-size: 18px;
+      color: var(--accent-soft);
+      font-weight: 500;
+    }
+
+    .showcase-lead {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    .showcase-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    .meta-item__label {
+      font-size: 10.5px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .meta-item__value {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 2px;
+    }
+
+    .showcase-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      min-height: 100vh;
+    }
+
+    .showcase-section {
+      margin-bottom: 56px;
+    }
+
+    .showcase-section h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .showcase-section h2::before {
+      content: '//';
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 18px;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .problem-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+
+    .problem-num {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .problem-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .problem-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .diagram-box {
+      background: #080808;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      border-left: 3px solid var(--accent);
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .feature-card p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .roadmap-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .roadmap-item {
+      display: flex;
+      gap: 20px;
+      padding: 16px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      align-items: center;
+    }
+
+    .roadmap-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+
+    .roadmap-badge--done {
+      background: rgba(34, 197, 94, 0.1);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .roadmap-badge--progress {
+      background: rgba(234, 179, 8, 0.1);
+      color: #facc15;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+
+    .roadmap-badge--planned {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .roadmap-text {
+      font-size: 13.5px;
+      color: var(--text-primary);
+    }
+
+    .media-preview-container {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 24px;
+      background: #000;
+    }
+
+    .media-preview-container img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .problem-grid,
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+      .showcase-title {
+        font-size: 32px;
+      }
+      .roadmap-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cursor glow overlay -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <div class="showcase-container">
+    <header class="showcase-header">
+      <a href="../../#projects" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+      </a>
+
+      <div class="showcase-hero">
+        <div class="status-badge status-badge--active" style="align-self: flex-start;">
+          <span class="status-badge__dot"></span>
+          <span>⚡ ACTIVE DEVELOPMENT · FLAGSHIP PRODUCT</span>
+        </div>
+
+        <h1 class="showcase-title">ResearchLens AI</h1>
+        <p class="showcase-tagline">AI-Powered Research Intelligence — See Your Research in Context</p>
+
+        <p class="showcase-lead">
+          ResearchLens AI is a next-generation academic intelligence platform built to resolve the fundamental friction points researchers and students face: finding relevant literature, synthesizing cross-paper methodology gaps, and formulating rigorous problem statements without getting buried in thousands of PDFs.
+        </p>
+
+        <div class="showcase-meta">
+          <div class="meta-item">
+            <span class="meta-item__label">Role</span>
+            <span class="meta-item__value">AI Architect &amp; Full-Stack Builder</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Core Architecture</span>
+            <span class="meta-item__value">Hybrid RAG + Knowledge Graph</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Primary Stack</span>
+            <span class="meta-item__value">FastAPI · Next.js · Qdrant · LLMs</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-item__label">Status</span>
+            <span class="meta-item__value">Active Engineering &amp; Prototyping</span>
+          </div>
+        </div>
+
+        <div class="flagship-card__actions" style="margin-top: 18px;">
+          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+            class="action-btn action-btn--primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a href="../../#projects" class="action-btn action-btn--secondary">
+            <span>Return to Portfolio</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Concept UI Preview -->
+      <section class="showcase-section">
+        <h2>Concept Interface &amp; Knowledge Graph</h2>
+        <div class="media-preview-container">
+          <img src="../../assets/researchlens-preview.jpg" alt="ResearchLens AI Concept Interface and Knowledge Graph" />
+        </div>
+        <p style="font-size: 13px; color: var(--text-muted); font-family: var(--font-mono);">
+          * Concept UI depicting the dynamic Citation Knowledge Graph, recent paper synthesis cards, and automated research gap identification dashboard.
+        </p>
+      </section>
+
+      <!-- The Problem -->
+      <section class="showcase-section">
+        <h2>The Core Problem</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="problem-num">01 / DISCOVERY PARALYSIS</span>
+            <h3 class="problem-title">Where to Begin?</h3>
+            <p class="problem-desc">
+              Students starting thesis work or capstone projects lack clear visibility into which sub-domains are saturated versus actively expanding with opportunities.
+            </p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-num">02 / WEAK PROBLEM STATEMENTS</span>
+            <h3 class="problem-title">Vague Rationale</h3>
+            <p class="problem-desc">
+              Researchers struggle to synthesize limitations across recent literature to justify why their specific investigation is novel and necessary.
+            </p>
+          </div>
+          <div class="problem-card">
+            <span class="problem-num">03 / MANUAL PAPER SIFTING</span>
+            <h3 class="problem-title">100+ Hours Reading</h3>
+            <p class="problem-desc">
+              Manually skimming through dozens of 20-page papers to locate methodologies, datasets, benchmarks, and conflicting findings consumes massive effort.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Two Pillars Solution -->
+      <section class="showcase-section">
+        <h2>Platform Architecture &amp; The Two Pillars</h2>
+        <div class="diagram-box">
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            RESEARCHLENS AI SAAS                             │
+├──────────────────────────────────────┬──────────────────────────────────────┤
+│  PILLAR 1: RESEARCH DISCOVERY        │  PILLAR 2: DEEP PAPER ANALYSIS       │
+│  - Academic Domain Exploration       │  - Full-Text PDF Extraction          │
+│  - Topic Trend Analysis              │  - Structured Findings Extraction    │
+│  - Emerging Literature Radar         │  - Methodology Comparison Matrix     │
+│  - Research Gap Extraction           │  - Dynamic Citation Graph Topology   │
+│  - Evidence-Based Direction Builder  │  - Contextual Multi-Doc RAG Chat     │
+└──────────────────────────────────────┴──────────────────────────────────────┘
+                                  │
+                                  ▼
+      [ FastAPI Backend Engine ] ──► [ Dense Vector DB (Qdrant) ]
+                                 ──► [ Sentence-BERT Embeddings ]
+                                 ──► [ Gemini / LLM Reasoning ]
+        </div>
+      </section>
+
+      <!-- Key Capabilities -->
+      <section class="showcase-section">
+        <h2>Key Platform Features</h2>
+        <div class="feature-list">
+          <div class="feature-card">
+            <h3>Interactive Citation Knowledge Graph</h3>
+            <p>Visual network topology rendering how influential papers connect, cite each other, and branch into novel sub-domains.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Structured Literature Gap Synthesis</h3>
+            <p>Automatically isolates limitations and future research recommendations from existing papers into actionable thesis questions.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Explainable Semantic Search</h3>
+            <p>Dense vector retrieval matched against concept semantics rather than brittle keyword strings, surfacing cross-discipline insights.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Evidence-Based Direction Engine</h3>
+            <p>Generates structured problem statements paired with exact peer-reviewed paper citations to back up research methodology.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Stack -->
+      <section class="showcase-section">
+        <h2>Technology Stack</h2>
+        <div class="categorized-skills" style="margin-top: 12px;">
+          <div class="skill-group">
+            <h3 class="skill-group__title">AI &amp; Retrieval Backend</h3>
+            <div class="skill-chips">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">Qdrant Vector DB</span>
+              <span class="tag">Sentence-BERT</span>
+              <span class="tag">LangChain / LlamaIndex</span>
+              <span class="tag">Google Gemini API</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Frontend &amp; Visualization</h3>
+            <div class="skill-chips">
+              <span class="tag">Next.js 15+</span>
+              <span class="tag">React 19</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">D3.js / Cytoscape</span>
+              <span class="tag">TailwindCSS</span>
+              <span class="tag">Lucide Icons</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap -->
+      <section class="showcase-section">
+        <h2>Development Roadmap</h2>
+        <div class="roadmap-list">
+          <div class="roadmap-item">
+            <span class="roadmap-badge roadmap-badge--done">✓ COMPLETED</span>
+            <span class="roadmap-text">Product specification, user flow definition, and 3000+ line technical architecture roadmap completed.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-badge roadmap-badge--progress">⚡ IN PROGRESS</span>
+            <span class="roadmap-text">FastAPI retrieval microservice, PDF text parsing pipelines, and Sentence-BERT vector indexing prototype.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-badge roadmap-badge--planned">PLANNED</span>
+            <span class="roadmap-text">Interactive citation knowledge graph visualizer and RAG chat streaming frontend in Next.js.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-badge roadmap-badge--planned">PLANNED</span>
+            <span class="roadmap-text">Private beta deployment for university researchers and open-access academic API integrations.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Action Callout -->
+      <div class="contact-card" style="margin-bottom: 60px;">
+        <h3 style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">
+          Interested in Collaborating on ResearchLens AI?
+        </h3>
+        <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
+          Whether you are a researcher looking to test early prototypes or an engineer interested in retrieval-augmented architectures, reach out.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:sangram.adhikary.src@gmail.com" class="btn btn--primary">Email Me</a>
+          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">GitHub</a>
+          <a href="../../#projects" class="btn btn--resume-highlight">Back to Portfolio</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">© 2026 <strong>Sangram Adhikary</strong>. ResearchLens AI Project Showcase.</p>
+        <div class="footer__links">
+          <a href="../../">Portfolio Home</a>
+          <span>·</span>
+          <a href="../../resume/Sangram-Adhikary-AI-Engineer-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <span>·</span>
+          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+
+</html>

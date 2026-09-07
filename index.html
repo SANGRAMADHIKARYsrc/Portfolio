@@ -4,13 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sangram Adhikary — AI/ML Engineer</title>
+  <title>Sangram Adhikary | AI Engineer & AI Product Builder</title>
   <meta name="description"
-    content="Sangram Adhikary is an AI/ML Engineer and B.Tech CS student specializing in deep learning, NLP, and computer vision. Also a freelance graphic designer with 7+ years of experience." />
+    content="AI Engineer and AI Product Builder specializing in Generative AI, Machine Learning, NLP, Computer Vision, and full-stack intelligent applications." />
+  <meta name="keywords"
+    content="AI Engineer, Machine Learning Engineer, Generative AI Developer, NLP Developer, Full Stack AI Developer, Artificial Intelligence Portfolio, Sangram Adhikary" />
+  <meta name="author" content="Sangram Adhikary" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sangram Adhikary | AI Engineer & AI Product Builder" />
+  <meta property="og:description"
+    content="Building intelligent, human-centered products with Generative AI, Machine Learning, NLP, and modern full-stack technologies." />
+  <meta property="og:image" content="assets/nextgen-ai-studio-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sangram Adhikary | AI Engineer & AI Product Builder" />
+  <meta name="twitter:description"
+    content="Building intelligent, human-centered products with Generative AI, Machine Learning, NLP, and modern full-stack technologies." />
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -23,39 +39,116 @@
   <canvas id="code-rain" aria-hidden="true"></canvas>
 
   <div class="layout">
-    <!-- ═══════════════════ LEFT PANEL (Sticky) ═══════════════════ -->
+    <!-- ═══════════════════ LEFT PANEL (Sticky Hero & Nav) ═══════════════════ -->
     <header class="left-panel" id="left-panel">
       <div class="left-panel__top">
+        <div class="identity-badge">
+          <span class="status-pulse-dot"></span>
+          <span>Available for AI Roles &amp; Collaborations</span>
+        </div>
+
         <h1 class="name">Sangram Adhikary</h1>
-        <h2 class="title">AI / ML Engineer</h2>
-        <p class="tagline">Building intelligent systems with deep learning, NLP & computer vision. Design enthusiast on
-          the side.</p>
+        <h2 class="title">AI Engineer &amp; AI Product Builder</h2>
+
+        <p class="tagline">
+          Building intelligent, human-centered products with Generative AI, Machine Learning, NLP, and modern full-stack technologies.
+        </p>
+
+        <p class="philosophy-line">
+          From AI models to deployed products — combining AI engineering with 7+ years of professional design to build experiences people can actually use.
+        </p>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary" id="hero-btn-work">
+            <span>Explore My Work</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="resume/Sangram-Adhikary-AI-Engineer-Resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn--secondary" id="hero-btn-resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+        <!-- Hero Subtle Stats -->
+        <div class="hero-stats" aria-label="Portfolio highlights">
+          <div class="stat-pill">
+            <span class="stat-value">3</span>
+            <span class="stat-label">AI Products</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-value">2</span>
+            <span class="stat-label">Live Platforms</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-value">7+ Yrs</span>
+            <span class="stat-label">Design Experience</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-value">B.Tech</span>
+            <span class="stat-label">AI &amp; ML</span>
+          </div>
+        </div>
       </div>
 
+      <!-- Navigation Links -->
       <nav class="nav" aria-label="Main navigation">
         <a href="#about" class="nav__link active" data-section="about">
           <span class="nav__indicator"></span>
           <span class="nav__text">About</span>
         </a>
+        <a href="#projects" class="nav__link" data-section="projects">
+          <span class="nav__indicator"></span>
+          <span class="nav__text">Featured Projects</span>
+        </a>
+        <a href="#capabilities" class="nav__link" data-section="capabilities">
+          <span class="nav__indicator"></span>
+          <span class="nav__text">What I Build</span>
+        </a>
+        <a href="#differentiator" class="nav__link" data-section="differentiator">
+          <span class="nav__indicator"></span>
+          <span class="nav__text">Why Build Differently</span>
+        </a>
+        <a href="#skills" class="nav__link" data-section="skills">
+          <span class="nav__indicator"></span>
+          <span class="nav__text">Tech Stack</span>
+        </a>
         <a href="#experience" class="nav__link" data-section="experience">
           <span class="nav__indicator"></span>
           <span class="nav__text">Experience</span>
         </a>
-        <a href="#projects" class="nav__link" data-section="projects">
-          <span class="nav__indicator"></span>
-          <span class="nav__text">Projects</span>
-        </a>
         <a href="#portfolio" class="nav__link" data-section="portfolio">
           <span class="nav__indicator"></span>
-          <span class="nav__text">Portfolio</span>
+          <span class="nav__text">Design Portfolio</span>
+        </a>
+        <a href="#contact" class="nav__link" data-section="contact">
+          <span class="nav__indicator"></span>
+          <span class="nav__text">Contact</span>
+        </a>
+
+        <!-- Compact Navigation Resume Link -->
+        <a href="resume/Sangram-Adhikary-AI-Engineer-Resume.pdf" target="_blank" rel="noopener noreferrer"
+          class="nav__resume-btn" id="nav-resume-btn" aria-label="Download Resume PDF">
+          <span>Resume ↓</span>
         </a>
       </nav>
 
+      <!-- Social Icons -->
       <div class="socials">
         <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
           class="social-icon" id="social-github">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
             <path
               d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
             <path d="M9 18c-4.51 2-5-2-7-2" />
@@ -63,435 +156,916 @@
         </a>
         <a href="https://www.linkedin.com/in/sangramadhikary/" target="_blank" rel="noopener noreferrer"
           aria-label="LinkedIn" class="social-icon" id="social-linkedin">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
             <rect width="4" height="12" x="2" y="9" />
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
-        <a href="https://www.facebook.com/sangram.adhikary.587" target="_blank" rel="noopener noreferrer"
-          aria-label="Facebook" class="social-icon" id="social-facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        <a href="mailto:sangram.adhikary.src@gmail.com" aria-label="Email" class="social-icon" id="social-email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
         </a>
-        <a href="https://www.instagram.com/sangram_ad/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-          class="social-icon" id="social-instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        <a href="https://www.behance.net/sangramadhikary01" target="_blank" rel="noopener noreferrer"
+          aria-label="Behance" class="social-icon" id="social-behance">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12h6a4 4 0 0 1 0 8H2z" />
+            <path d="M2 4h5a4 4 0 0 1 0 8H2z" />
+            <path d="M15 4h6" />
+            <path d="M18 4v16" />
           </svg>
         </a>
       </div>
     </header>
 
-    <!-- ═══════════════════ RIGHT PANEL (Scrolling) ═══════════════════ -->
+    <!-- ═══════════════════ RIGHT PANEL (Scrolling Content) ═══════════════════ -->
     <main class="right-panel" id="content">
 
-      <!-- ── ABOUT ── -->
+      <!-- ── 01. ABOUT ── -->
       <section id="about" class="section" aria-label="About me">
         <div class="section__header-mobile">
           <h2 class="section__title-mobile">About</h2>
         </div>
         <div class="section__content">
-          <p>
-            I'm a <strong>Computer Science</strong> student specializing in <strong>Artificial Intelligence & Machine
-              Learning</strong> at
-            <a href="#" class="inline-link">Galgotias University</a>, pursuing my B.Tech. My core passion lies in
-            building intelligent systems —
-            from supervised and unsupervised learning models to deep neural networks for computer vision and natural
-            language processing.
+          <p class="lead-text">
+            I am an <strong>AI Engineer &amp; AI Product Builder</strong> focused on researching, designing, and shipping practical intelligent systems using <strong>Generative AI, Machine Learning, Natural Language Processing</strong>, and modern full-stack web architectures.
           </p>
           <p>
-            During my internship at <strong>CodSoft</strong>, I developed production-grade AI applications including
-            image captioning systems,
-            rule-based chatbots, and game engines powered by the Minimax algorithm. I'm comfortable working across the
-            ML pipeline —
-            data preprocessing with <strong>Pandas</strong> and <strong>NumPy</strong>, model building with
-            <strong>TensorFlow</strong> and
-            <strong>Scikit-learn</strong>, and deploying solutions in <strong>Jupyter</strong> environments.
+            Currently pursuing my <strong>B.Tech in Computer Science</strong> with a specialization in <strong>Artificial Intelligence and Machine Learning</strong> at Galgotias University. My engineering foundation spans the end-to-end AI lifecycle — from data curation and model fine-tuning to building low-latency retrieval pipelines and responsive frontends.
           </p>
           <p>
-            On the side, I've been a freelance <strong>Graphic Designer & Illustrator</strong> for over 7 years, with
-            3000+ assets published
-            across Adobe Stock, Freepik, and Shutterstock. Design is my creative outlet — AI/ML is my career.
+            During my internship at <strong>CodSoft</strong>, I engineered production-ready AI applications including sequence-to-sequence image captioning systems, rule-based conversational agents, and game engines powered by Minimax heuristics.
           </p>
           <p>
-            When I'm not training models or pushing pixels, I'm exploring full-stack web development with
-            <strong>React</strong>,
-            <strong>Next.js</strong>, and <strong>TypeScript</strong> to build polished front-ends for my AI tools.
+            What sets me apart is my <strong>7+ years of professional experience in digital design &amp; illustration</strong>, with over 3,000+ published commercial assets across Adobe Stock, Freepik, and Shutterstock. I don't just train algorithms in notebooks; I bridge complex machine intelligence with thoughtful human interfaces to create products people actually love using.
           </p>
+        </div>
+      </section>
 
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3 class="skill-category__title">AI / ML</h3>
-              <div class="skill-tags">
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Deep Learning</span>
-                <span class="tag">NLP</span>
-                <span class="tag">Computer Vision</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">Jupyter</span>
+      <!-- ── 02. FEATURED PROJECTS (FLAGSHIP TRIO) ── -->
+      <section id="projects" class="section" aria-label="Featured Projects">
+        <div class="section__header-mobile">
+          <h2 class="section__title-mobile">Featured Projects</h2>
+        </div>
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Flagship Portfolio</span>
+          <h2 class="section-heading">Selected AI Products</h2>
+          <p class="section-subtext">
+            Production-grade systems demonstrating AI research, retrieval-augmented intelligence, and deployed full-stack products.
+          </p>
+        </div>
+
+        <div class="flagship-projects">
+
+          <!-- PROJECT 01 — RESEARCHLENS AI (FLAGSHIP) -->
+          <article class="flagship-card flagship-card--primary" id="proj-researchlens">
+            <div class="flagship-card__header">
+              <span class="project-num">01 / FLAGSHIP</span>
+              <div class="status-badge status-badge--active">
+                <span class="status-badge__dot"></span>
+                <span>⚡ ACTIVE DEVELOPMENT</span>
               </div>
             </div>
-            <div class="skill-category">
-              <h3 class="skill-category__title">Languages</h3>
-              <div class="skill-tags">
-                <span class="tag">Python</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-              </div>
+
+            <div class="flagship-card__media">
+              <a href="projects/researchlens-ai/" aria-label="Explore ResearchLens AI Overview">
+                <img src="assets/researchlens-preview.jpg" alt="ResearchLens AI Intelligence Platform Dashboard Mockup"
+                  loading="lazy" class="flagship-card__img" />
+                <div class="media-overlay">
+                  <span class="media-badge">System Architecture &amp; UI Concept</span>
+                </div>
+              </a>
             </div>
-            <div class="skill-category">
-              <h3 class="skill-category__title">Web / Tools</h3>
-              <div class="skill-tags">
-                <span class="tag">React</span>
+
+            <div class="flagship-card__body">
+              <div class="title-row">
+                <h3 class="flagship-card__title">
+                  <a href="projects/researchlens-ai/">ResearchLens AI</a>
+                </h3>
+                <span class="flagship-card__tagline">AI-Powered Research Intelligence</span>
+              </div>
+
+              <p class="flagship-card__desc">
+                An intelligent research platform transforming how students and researchers discover, analyze, synthesize, and interact with academic literature. Integrates dense semantic vector search, dynamic citation knowledge graphs, automated literature gap extraction, and interactive RAG-based paper comprehension.
+              </p>
+
+              <div class="flagship-card__tech">
+                <span class="tag">Generative AI</span>
+                <span class="tag">RAG Pipeline</span>
+                <span class="tag">Large Language Models</span>
+                <span class="tag">Semantic Search</span>
+                <span class="tag">Vector DBs</span>
+                <span class="tag">FastAPI</span>
                 <span class="tag">Next.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Git</span>
-                <span class="tag">DSA</span>
+              </div>
+
+              <div class="flagship-card__actions">
+                <a href="projects/researchlens-ai/" class="action-btn action-btn--featured" id="btn-researchlens-overview">
+                  <span>Project Overview</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+                  class="action-btn action-btn--secondary" id="btn-researchlens-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
               </div>
             </div>
-            <div class="skill-category">
-              <h3 class="skill-category__title">Design</h3>
-              <div class="skill-tags">
-                <span class="tag">UI/UX</span>
-                <span class="tag">Illustration</span>
-                <span class="tag">Brand Identity</span>
-                <span class="tag">Print Design</span>
+          </article>
+
+          <!-- PROJECT 02 — CONTEXTHIRE -->
+          <article class="flagship-card" id="proj-contexthire">
+            <div class="flagship-card__header">
+              <span class="project-num">02</span>
+              <div class="status-badge status-badge--live">
+                <span class="status-badge__dot"></span>
+                <span>🟢 LIVE PRODUCT</span>
               </div>
+            </div>
+
+            <div class="flagship-card__media">
+              <a href="https://contexthire.onrender.com/" target="_blank" rel="noopener noreferrer"
+                aria-label="Open ContextHire Live Application">
+                <img src="assets/contexthire-preview.png" alt="ContextHire AI Candidate Screening Platform Dashboard"
+                  loading="lazy" class="flagship-card__img" />
+                <div class="media-overlay">
+                  <span class="media-badge">Verified Live Application</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="flagship-card__body">
+              <div class="title-row">
+                <h3 class="flagship-card__title">
+                  <a href="https://contexthire.onrender.com/" target="_blank" rel="noopener noreferrer">ContextHire</a>
+                </h3>
+                <span class="flagship-card__tagline">AI-Assisted Hiring Intelligence</span>
+              </div>
+
+              <p class="flagship-card__desc">
+                Context-aware recruitment intelligence and ATS resume compatibility engine. Eliminates rigid keyword matching failures through a 3-tier Hybrid Match Scoring algorithm: TF-IDF lexical overlap (25%), dense Sentence-BERT (<code class="code-inline">all-MiniLM-L6-v2</code>) transformer embeddings (35%), and direct competency entity extraction (40%).
+              </p>
+
+              <div class="flagship-card__tech">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Sentence-BERT</span>
+                <span class="tag">NLP</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">SQLite</span>
+              </div>
+
+              <div class="flagship-card__actions">
+                <a href="https://contexthire.onrender.com/" target="_blank" rel="noopener noreferrer"
+                  class="action-btn action-btn--primary" id="btn-contexthire-live">
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/SANGRAMADHIKARYsrc/ContextHire" target="_blank" rel="noopener noreferrer"
+                  class="action-btn action-btn--secondary" id="btn-contexthire-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 — NEXTGEN AI STUDIO -->
+          <article class="flagship-card" id="proj-nextgen">
+            <div class="flagship-card__header">
+              <span class="project-num">03</span>
+              <div class="status-badge status-badge--live">
+                <span class="status-badge__dot"></span>
+                <span>🟢 LIVE PRODUCT</span>
+              </div>
+            </div>
+
+            <div class="flagship-card__media">
+              <a href="https://nextgenaistudio.netlify.app/" target="_blank" rel="noopener noreferrer"
+                aria-label="Open NextGen AI Studio Live Application">
+                <img src="assets/nextgen-ai-studio-preview.png" alt="NextGen AI Studio Platform Hero Interface"
+                  loading="lazy" class="flagship-card__img" />
+                <div class="media-overlay">
+                  <span class="media-badge">Verified Live Application</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="flagship-card__body">
+              <div class="title-row">
+                <h3 class="flagship-card__title">
+                  <a href="https://nextgenaistudio.netlify.app/" target="_blank" rel="noopener noreferrer">NextGen AI Studio</a>
+                </h3>
+                <span class="flagship-card__tagline">All-in-One AI Productivity Platform</span>
+              </div>
+
+              <p class="flagship-card__desc">
+                Full-stack Generative AI suite unifying 30+ tools across writing, media generation, AI detection, and developer productivity into a cohesive dark-themed glassmorphism interface. Built with real-time AI responses, serverless API routes, and zero-auth frictionless access.
+              </p>
+
+              <div class="flagship-card__tech">
+                <span class="tag">Next.js 16</span>
+                <span class="tag">React 19</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Gemini AI</span>
+                <span class="tag">Generative AI</span>
+                <span class="tag">TailwindCSS</span>
+              </div>
+
+              <div class="flagship-card__actions">
+                <a href="https://nextgenaistudio.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="action-btn action-btn--primary" id="btn-nextgen-live">
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <a href="https://github.com/SANGRAMADHIKARYsrc/nextgen-ai-studio" target="_blank"
+                  rel="noopener noreferrer" class="action-btn action-btn--secondary" id="btn-nextgen-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── 03. WHAT I BUILD ── -->
+      <section id="capabilities" class="section" aria-label="What I Build">
+        <div class="section__header-mobile">
+          <h2 class="section__title-mobile">What I Build</h2>
+        </div>
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Engineering Capabilities</span>
+          <h2 class="section-heading">What I Build</h2>
+          <p class="section-subtext">
+            Holistic capabilities across model design, retrieval architectures, algorithms, and deployed interfaces.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <div class="capability-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            </div>
+            <h3 class="capability-card__title">Generative AI Applications</h3>
+            <p class="capability-card__desc">
+              LLM-powered products, contextual AI copilots, intelligent content creation engines, automated reasoning workflows, and agentic integrations.
+            </p>
+            <div class="capability-card__tags">
+              <span>LLMs</span> · <span>RAG</span> · <span>Prompt Design</span> · <span>Tool Calling</span>
+            </div>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5" />
+                <line x1="12" y1="19" x2="20" y2="19" />
+              </svg>
+            </div>
+            <h3 class="capability-card__title">NLP &amp; Intelligent Systems</h3>
+            <p class="capability-card__desc">
+              Semantic vector search, dense sentence embeddings, hybrid matching pipelines, document intelligence, ATS parsers, and conversational dialog systems.
+            </p>
+            <div class="capability-card__tags">
+              <span>Sentence-BERT</span> · <span>TF-IDF</span> · <span>Embeddings</span> · <span>NER</span>
+            </div>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3 class="capability-card__title">Machine Learning Systems</h3>
+            <p class="capability-card__desc">
+              Predictive models, classification engines, fraud detection systems, exploratory data pipelines, and reproducible training workflows.
+            </p>
+            <div class="capability-card__tags">
+              <span>Scikit-learn</span> · <span>TensorFlow</span> · <span>Pandas</span> · <span>Pipelines</span>
+            </div>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                <circle cx="9" cy="9" r="2" />
+                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+              </svg>
+            </div>
+            <h3 class="capability-card__title">Computer Vision</h3>
+            <p class="capability-card__desc">
+              Sequence-to-sequence image captioning networks, Real-ESRGAN super-resolution enhancement, feature extraction, and computer vision pipelines.
+            </p>
+            <div class="capability-card__tags">
+              <span>CNN-LSTM</span> · <span>Real-ESRGAN</span> · <span>Attention</span> · <span>OpenCV</span>
+            </div>
+          </div>
+
+          <div class="capability-card capability-card--wide">
+            <div class="capability-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3 class="capability-card__title">Full-Stack AI Products</h3>
+            <p class="capability-card__desc">
+              End-to-end cloud deployments merging reactive client interfaces (Next.js, React), scalable Python backends (FastAPI, Flask), databases, vector stores, and seamless CI/CD hosting.
+            </p>
+            <div class="capability-card__tags">
+              <span>Next.js</span> · <span>TypeScript</span> · <span>FastAPI</span> · <span>Cloud Deployment</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ── EXPERIENCE ── -->
+      <!-- ── 04. WHY I BUILD DIFFERENTLY (DIFFERENTIATOR) ── -->
+      <section id="differentiator" class="section" aria-label="Why I Build Differently">
+        <div class="section__header-mobile">
+          <h2 class="section__title-mobile">Why I Build Differently</h2>
+        </div>
+
+        <div class="differentiator-box">
+          <span class="section-eyebrow">Personal Differentiator</span>
+          <h2 class="differentiator-heading">Why I Build Differently</h2>
+
+          <!-- Formula Graphic -->
+          <div class="formula-container" aria-label="Core Formula: AI Engineering + Full-Stack Dev + 7+ Years Design = AI Product Builder">
+            <div class="formula-node">
+              <span class="formula-tag">ENGINEERING</span>
+              <span class="formula-title">AI Engineering</span>
+              <span class="formula-sub">Models &amp; Pipelines</span>
+            </div>
+            <span class="formula-operator">+</span>
+            <div class="formula-node">
+              <span class="formula-tag">ARCHITECTURE</span>
+              <span class="formula-title">Full-Stack Dev</span>
+              <span class="formula-sub">APIs &amp; Modern Web</span>
+            </div>
+            <span class="formula-operator">+</span>
+            <div class="formula-node">
+              <span class="formula-tag">CRAFT</span>
+              <span class="formula-title">7+ Yrs Design</span>
+              <span class="formula-sub">Human Experience</span>
+            </div>
+            <span class="formula-operator">=</span>
+            <div class="formula-node formula-node--result">
+              <span class="formula-tag">PRODUCT</span>
+              <span class="formula-title">AI Product Builder</span>
+              <span class="formula-sub">Shipped &amp; Usable</span>
+            </div>
+          </div>
+
+          <p class="differentiator-text">
+            Most machine learning engineers stop at Jupyter notebooks and loss curves. Most designers create mockups that ignore algorithmic constraints. <strong>I combine technical AI development with seven years of professional creative experience</strong> to build systems that are technically sound, visually refined, and easy to use.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── 05. TECH STACK (CATEGORIZED SKILLS) ── -->
+      <section id="skills" class="section" aria-label="Tech Stack">
+        <div class="section__header-mobile">
+          <h2 class="section__title-mobile">Tech Stack</h2>
+        </div>
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Technical Competencies</span>
+          <h2 class="section-heading">Skills &amp; Technologies</h2>
+          <p class="section-subtext">
+            Curated tools and frameworks genuinely used across model development, data engineering, and product deployment.
+          </p>
+        </div>
+
+        <div class="categorized-skills">
+          <!-- 1. AI & Machine Learning -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+              <span>AI &amp; Machine Learning</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Jupyter</span>
+            </div>
+          </div>
+
+          <!-- 2. Generative AI -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+              </svg>
+              <span>Generative AI</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Large Language Models (LLMs)</span>
+              <span class="tag">RAG Pipelines</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Dense Embeddings</span>
+              <span class="tag">Vector Databases</span>
+              <span class="tag">Google Gemini API</span>
+              <span class="tag">Agent Workflows</span>
+            </div>
+          </div>
+
+          <!-- 3. NLP -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+              <span>Natural Language Processing (NLP)</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Sentence-BERT (SBERT)</span>
+              <span class="tag">TF-IDF Vectorization</span>
+              <span class="tag">Semantic Similarity</span>
+              <span class="tag">Text Classification</span>
+              <span class="tag">Entity Extraction</span>
+              <span class="tag">Contextual Matching</span>
+            </div>
+          </div>
+
+          <!-- 4. Computer Vision -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <span>Computer Vision</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Image Captioning (CNN-LSTM)</span>
+              <span class="tag">Real-ESRGAN Upscaling</span>
+              <span class="tag">Convolutional Neural Networks</span>
+              <span class="tag">Image Processing</span>
+              <span class="tag">OpenCV</span>
+            </div>
+          </div>
+
+          <!-- 5. Full-Stack Development -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              <span>Full-Stack Development</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Next.js</span>
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flask</span>
+              <span class="tag">RESTful APIs</span>
+              <span class="tag">SQLite / SQL</span>
+            </div>
+          </div>
+
+          <!-- 6. Developer Tools & Creative -->
+          <div class="skill-group">
+            <h3 class="skill-group__title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              <span>Developer Tools &amp; Creative</span>
+            </h3>
+            <div class="skill-chips">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Render / Vercel / Netlify</span>
+              <span class="tag">Linux / Bash</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Adobe Creative Suite</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 06. EXPERIENCE ── -->
       <section id="experience" class="section" aria-label="Experience">
         <div class="section__header-mobile">
           <h2 class="section__title-mobile">Experience</h2>
         </div>
-        <div class="section__content">
 
-          <a href="#" class="card" id="exp-codsoft">
-            <div class="card__meta">
-              <span class="card__date">2024</span>
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Track Record</span>
+          <h2 class="section-heading">Experience &amp; Education</h2>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- EXP 1: CODSOFT -->
+          <article class="exp-card" id="exp-codsoft">
+            <div class="exp-card__period">
+              <span class="exp-card__date">2024</span>
+              <span class="exp-card__type">Internship</span>
             </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                AI/ML Intern · CodSoft
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
+            <div class="exp-card__main">
+              <h3 class="exp-card__role">
+                AI / ML Intern · <span class="exp-card__company">CodSoft</span>
               </h3>
-              <p class="card__description">
-                Developed multiple AI/ML applications — image captioning using deep learning & computer vision,
-                rule-based chatbot systems, and a Tic-Tac-Toe game engine with Minimax algorithm.
-                Worked across the full ML pipeline from data preprocessing to model deployment.
+              <p class="exp-card__summary">
+                Engineered production-grade AI/ML applications across computer vision, natural language processing, and game AI.
               </p>
-              <div class="card__tags">
+              <ul class="exp-card__bullets">
+                <li>Built a deep learning <strong>Image Captioning System</strong> combining CNN visual feature extraction with an LSTM sequential language generator.</li>
+                <li>Developed conversational <strong>rule-based chatbot architectures</strong> supporting intent classification and stateful customer response handling.</li>
+                <li>Implemented an adversarial game engine utilizing the <strong>Minimax algorithm</strong> with alpha-beta pruning.</li>
+                <li>Managed full ML pipelines: exploratory data analysis, dataset preprocessing with Pandas/NumPy, and model validation.</li>
+              </ul>
+              <div class="exp-card__tags">
                 <span class="tag tag--small">Python</span>
                 <span class="tag tag--small">TensorFlow</span>
+                <span class="tag tag--small">Deep Learning</span>
                 <span class="tag tag--small">Computer Vision</span>
                 <span class="tag tag--small">NLP</span>
-                <span class="tag tag--small">Deep Learning</span>
               </div>
             </div>
-          </a>
+          </article>
 
-          <a href="#" class="card" id="exp-freelance">
-            <div class="card__meta">
-              <span class="card__date">2017 — Present</span>
+          <!-- EXP 2: FREELANCE DESIGN -->
+          <article class="exp-card" id="exp-freelance">
+            <div class="exp-card__period">
+              <span class="exp-card__date">2017 — Present</span>
+              <span class="exp-card__type">Freelance</span>
             </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                Freelance Graphic Designer & Illustrator
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
+            <div class="exp-card__main">
+              <h3 class="exp-card__role">
+                Graphic Designer &amp; Illustrator · <span class="exp-card__company">Independent</span>
               </h3>
-              <p class="card__description">
-                Published 3000+ creative assets across Adobe Stock, Freepik, and Shutterstock.
-                Specialized in brand identity, book covers, menu designs, t-shirt graphics, and premium print-ready
-                artwork.
-                Served clients globally with professional UI/UX and illustration services.
+              <p class="exp-card__summary">
+                Over 7 years of creative production delivering commercial digital assets, brand identities, and vector illustrations.
               </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Adobe Suite</span>
+              <ul class="exp-card__bullets">
+                <li>Published <strong>3,000+ commercial assets</strong> licensed across major global marketplaces: Adobe Stock, Freepik, and Shutterstock.</li>
+                <li>Partnered with international clients to deliver brand guidelines, UI concepts, book covers, and packaging graphics.</li>
+                <li>Honed deep intuition for visual hierarchy, interaction design, and typography that directly drives AI product usability.</li>
+              </ul>
+              <div class="exp-card__tags">
+                <span class="tag tag--small">Adobe Creative Suite</span>
+                <span class="tag tag--small">UI/UX Design</span>
                 <span class="tag tag--small">Illustration</span>
-                <span class="tag tag--small">Brand Identity</span>
-                <span class="tag tag--small">UI/UX</span>
-                <span class="tag tag--small">Print Design</span>
+                <span class="tag tag--small">Typography</span>
               </div>
             </div>
-          </a>
+          </article>
 
-          <a href="#" class="card" id="exp-education">
-            <div class="card__meta">
-              <span class="card__date">2022 — 2026</span>
+          <!-- EXP 3: EDUCATION -->
+          <article class="exp-card" id="exp-education">
+            <div class="exp-card__period">
+              <span class="exp-card__date">2022 — 2026</span>
+              <span class="exp-card__type">Education</span>
             </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                B.Tech Computer Science (AI & ML) · Galgotias University
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
+            <div class="exp-card__main">
+              <h3 class="exp-card__role">
+                B.Tech Computer Science (AI &amp; ML) · <span class="exp-card__company">Galgotias University</span>
               </h3>
-              <p class="card__description">
-                Specialization in Artificial Intelligence and Machine Learning. Core coursework in Data Structures &
-                Algorithms,
-                Machine Learning, Deep Learning, Natural Language Processing, and Computer Vision.
+              <p class="exp-card__summary">
+                Specialization in Artificial Intelligence and Machine Learning.
               </p>
-              <div class="card__tags">
-                <span class="tag tag--small">AI/ML</span>
-                <span class="tag tag--small">DSA</span>
-                <span class="tag tag--small">Computer Science</span>
+              <ul class="exp-card__bullets">
+                <li>Core Coursework: Data Structures &amp; Algorithms, Machine Learning, Deep Neural Networks, Natural Language Processing, Computer Vision, Operating Systems, Database Management.</li>
+                <li>Hands-on laboratory research implementing foundational ML architectures and optimization algorithms from first principles.</li>
+              </ul>
+              <div class="exp-card__tags">
+                <span class="tag tag--small">AI/ML Specialization</span>
+                <span class="tag tag--small">Algorithms</span>
+                <span class="tag tag--small">Neural Networks</span>
               </div>
             </div>
-          </a>
+          </article>
 
         </div>
       </section>
 
-      <!-- ── PROJECTS ── -->
-      <section id="projects" class="section" aria-label="Projects">
+      <!-- ── 07. MORE SELECTED PROJECTS ── -->
+      <section id="more-projects" class="section" aria-label="More Selected Projects">
         <div class="section__header-mobile">
-          <h2 class="section__title-mobile">Projects</h2>
+          <h2 class="section__title-mobile">More Projects</h2>
         </div>
-        <div class="section__content">
 
-          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="card"
-            id="proj-nextgen">
-            <div class="card__meta">
-              <span class="card__label">Featured</span>
-            </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                NextGen AI Studio
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Technical Foundations</span>
+          <h2 class="section-heading">More Selected Projects</h2>
+          <p class="section-subtext">
+            Specialized models, tools, and algorithms built across ML research and practical experiments.
+          </p>
+        </div>
+
+        <div class="more-projects-grid">
+          <!-- CARD 1: Image Captioning -->
+          <div class="mini-card" id="proj-captioning">
+            <div class="mini-card__top">
+              <span class="mini-card__tag">Computer Vision</span>
+              <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+                class="mini-card__link" aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
-              </h3>
-              <p class="card__description">
-                Premium AI-powered platform featuring 30+ tools for writing, media generation, AI detection, and
-                productivity.
-                Powered by Google Gemini AI with a polished dark-themed UI. Built as a full-stack application with
-                real-time processing and responsive design.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Next.js 16</span>
-                <span class="tag tag--small">React 19</span>
-                <span class="tag tag--small">TypeScript</span>
-                <span class="tag tag--small">Gemini AI</span>
-                <span class="tag tag--small">Full-Stack</span>
-              </div>
+              </a>
             </div>
-          </a>
+            <h3 class="mini-card__title">Image Captioning System</h3>
+            <p class="mini-card__desc">
+              End-to-end deep learning model generating natural language descriptions for visual inputs using CNN feature encoders and recurrent decoders.
+            </p>
+            <div class="mini-card__tech">
+              <span>Python</span> · <span>TensorFlow</span> · <span>CNN-LSTM</span>
+            </div>
+          </div>
 
-          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="card"
-            id="proj-captioning">
-            <div class="card__meta">
-              <span class="card__label">AI/ML</span>
-            </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                Image Captioning System
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
+          <!-- CARD 2: ML Model Collection -->
+          <div class="mini-card" id="proj-ml-models">
+            <div class="mini-card__top">
+              <span class="mini-card__tag">Machine Learning</span>
+              <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+                class="mini-card__link" aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
-              </h3>
-              <p class="card__description">
-                Deep learning model that generates natural language descriptions for images using computer vision
-                and sequence-to-sequence architecture. Trained on large-scale image-caption datasets with
-                attention mechanisms for improved accuracy.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Python</span>
-                <span class="tag tag--small">TensorFlow</span>
-                <span class="tag tag--small">Computer Vision</span>
-                <span class="tag tag--small">Deep Learning</span>
-              </div>
+              </a>
             </div>
-          </a>
+            <h3 class="mini-card__title">ML Model Collection</h3>
+            <p class="mini-card__desc">
+              Collection of production-grade predictive models: credit fraud detection, survival classification, and time-series forecasting with end-to-end EDA pipelines.
+            </p>
+            <div class="mini-card__tech">
+              <span>Scikit-learn</span> · <span>Pandas</span> · <span>Pipelines</span>
+            </div>
+          </div>
 
-          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="card"
-            id="proj-ml-models">
-            <div class="card__meta">
-              <span class="card__label">AI/ML</span>
-            </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                ML Model Collection
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
+          <!-- CARD 3: AI Image Upscaler -->
+          <div class="mini-card" id="proj-upscaler">
+            <div class="mini-card__top">
+              <span class="mini-card__tag">AI Tool</span>
+              <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+                class="mini-card__link" aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
-              </h3>
-              <p class="card__description">
-                Collection of production-grade machine learning models — Titanic survival prediction, stock price
-                forecasting,
-                movie genre classification, and credit card fraud detection. Each model features complete EDA,
-                feature engineering, and evaluation pipelines.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Scikit-learn</span>
-                <span class="tag tag--small">Pandas</span>
-                <span class="tag tag--small">NumPy</span>
-                <span class="tag tag--small">ML Pipeline</span>
-              </div>
+              </a>
             </div>
-          </a>
+            <h3 class="mini-card__title">AI Image Upscaler</h3>
+            <p class="mini-card__desc">
+              Client-side super-resolution tool leveraging Real-ESRGAN deep networks for high-fidelity photo and vector artifact restoration.
+            </p>
+            <div class="mini-card__tech">
+              <span>Real-ESRGAN</span> · <span>JavaScript</span> · <span>Canvas</span>
+            </div>
+          </div>
 
-          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="card"
-            id="proj-upscaler">
-            <div class="card__meta">
-              <span class="card__label">Tool</span>
-            </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                AI Image Upscaler
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
+          <!-- CARD 4: Rule-Based Chatbot -->
+          <div class="mini-card" id="proj-chatbot">
+            <div class="mini-card__top">
+              <span class="mini-card__tag">NLP &amp; Rules</span>
+              <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+                class="mini-card__link" aria-label="GitHub Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
-              </h3>
-              <p class="card__description">
-                Browser-based AI image upscaling tool using Real-ESRGAN. Supports drag-and-drop batch processing,
-                multiple model selection, and configurable upscale settings. Designed for designers and photographers
-                who need quick, high-quality upscaling.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Real-ESRGAN</span>
-                <span class="tag tag--small">JavaScript</span>
-                <span class="tag tag--small">AI</span>
-                <span class="tag tag--small">Image Processing</span>
-              </div>
+              </a>
             </div>
-          </a>
-
-          <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer" class="card"
-            id="proj-chatbot">
-            <div class="card__meta">
-              <span class="card__label">AI</span>
+            <h3 class="mini-card__title">Rule-Based Dialog Engine</h3>
+            <p class="mini-card__desc">
+              Modular customer dialog manager featuring regex pattern extraction, contextual intent state handling, and automated responses.
+            </p>
+            <div class="mini-card__tech">
+              <span>Python</span> · <span>NLP</span> · <span>State Machine</span>
             </div>
-            <div class="card__body">
-              <h3 class="card__title">
-                Rule-Based Chatbot
-                <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </h3>
-              <p class="card__description">
-                Functional chatbot system built with pattern matching and rule-based logic for automated customer
-                responses.
-                Features intent recognition, context management, and extensible rule architecture.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--small">Python</span>
-                <span class="tag tag--small">NLP</span>
-                <span class="tag tag--small">Rule Engine</span>
-              </div>
-            </div>
-          </a>
-
+          </div>
         </div>
       </section>
 
-      <!-- ── PORTFOLIO (Design) ── -->
+      <!-- ── 08. DESIGN PORTFOLIO ── -->
       <section id="portfolio" class="section" aria-label="Design Portfolio">
         <div class="section__header-mobile">
           <h2 class="section__title-mobile">Design Portfolio</h2>
         </div>
-        <div class="section__content">
-          <p class="section__intro">
-            Outside of AI/ML, I've been creating digital assets and illustrations for over 7 years.
-            Here's where you can find my design work:
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Creative Heritage</span>
+          <h2 class="section-heading">Design Portfolio</h2>
+          <p class="section-subtext">
+            Before diving deep into AI engineering, I built over seven years of professional creative production experience. This foundation continually informs how I approach human-centered AI products.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <a href="https://stock.adobe.com/contributor/212956315/1622Sangram" target="_blank"
+            rel="noopener noreferrer" class="portfolio-card" id="port-adobe">
+            <div class="portfolio-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3 class="portfolio-card__title">Adobe Stock Contributor</h3>
+            <p class="portfolio-card__description">
+              Thousands of premium vector assets, icon systems, and commercial design elements licensed globally.
+            </p>
+            <span class="portfolio-card__cta">View Contributor Profile →</span>
+          </a>
+
+          <a href="https://www.behance.net/sangramadhikary01" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card" id="port-behance">
+            <div class="portfolio-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h6a4 4 0 0 1 0 8H2z" />
+                <path d="M2 4h5a4 4 0 0 1 0 8H2z" />
+                <path d="M15 4h6" />
+                <path d="M18 4v16" />
+              </svg>
+            </div>
+            <h3 class="portfolio-card__title">Behance Portfolio</h3>
+            <p class="portfolio-card__description">
+              Full creative case studies: brand identities, UI/UX concept designs, book packaging, and detailed vector art.
+            </p>
+            <span class="portfolio-card__cta">View Behance Projects →</span>
+          </a>
+
+          <a href="https://www.shutterstock.com/g/Studio_AtoZ" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card" id="port-shutterstock">
+            <div class="portfolio-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M3 12h2" />
+                <path d="M19 12h2" />
+                <path d="M12 3v2" />
+                <path d="M12 19v2" />
+              </svg>
+            </div>
+            <h3 class="portfolio-card__title">Shutterstock (Studio AtoZ)</h3>
+            <p class="portfolio-card__description">
+              Commercial stock library featuring modern illustrations, vector artwork, and creative digital media.
+            </p>
+            <span class="portfolio-card__cta">Explore Studio AtoZ →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ── 09. CONTACT SECTION ── -->
+      <section id="contact" class="section" aria-label="Contact">
+        <div class="section__header-mobile">
+          <h2 class="section__title-mobile">Contact</h2>
+        </div>
+
+        <div class="contact-card">
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="contact-heading">Let's Build Something Intelligent.</h2>
+          <p class="contact-desc">
+            I am actively exploring AI engineering roles, AI product development opportunities, research collaborations, and internships involving Generative AI, Machine Learning, and NLP. Whether you have an open role, an idea to prototype, or want to discuss AI architecture — my inbox is open.
           </p>
 
-          <div class="portfolio-grid">
-            <a href="https://stock.adobe.com/contributor/212956315/1622Sangram" target="_blank"
-              rel="noopener noreferrer" class="portfolio-card" id="port-adobe">
-              <div class="portfolio-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                  <polyline points="2 17 12 22 22 17" />
-                  <polyline points="2 12 12 17 22 12" />
-                </svg>
-              </div>
-              <h3 class="portfolio-card__title">Adobe Stock</h3>
-              <p class="portfolio-card__description">Premium stock assets, vectors, and illustrations available for
-                commercial licensing.</p>
-              <span class="portfolio-card__cta">View Contributor Profile →</span>
+          <div class="contact-actions">
+            <a href="mailto:sangram.adhikary.src@gmail.com" class="btn btn--primary" id="contact-btn-email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span>Email Me</span>
             </a>
 
-            <a href="https://www.behance.net/sangramadhikary01" target="_blank" rel="noopener noreferrer"
-              class="portfolio-card" id="port-behance">
-              <div class="portfolio-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 12h6a4 4 0 0 1 0 8H2z" />
-                  <path d="M2 4h5a4 4 0 0 1 0 8H2z" />
-                  <path d="M15 4h6" />
-                  <path d="M18 4v16" />
-                </svg>
-              </div>
-              <h3 class="portfolio-card__title">Behance</h3>
-              <p class="portfolio-card__description">Full design portfolio — brand identity, book covers, UI concepts,
-                and illustration projects.</p>
-              <span class="portfolio-card__cta">View Portfolio →</span>
+            <a href="https://www.linkedin.com/in/sangramadhikary/" target="_blank" rel="noopener noreferrer"
+              class="btn btn--secondary" id="contact-btn-linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              <span>LinkedIn</span>
             </a>
 
-            <a href="https://www.shutterstock.com/g/Studio_AtoZ" target="_blank" rel="noopener noreferrer"
-              class="portfolio-card" id="port-shutterstock">
-              <div class="portfolio-card__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="18" height="18" x="3" y="3" rx="2" />
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M3 12h2" />
-                  <path d="M19 12h2" />
-                  <path d="M12 3v2" />
-                  <path d="M12 19v2" />
-                </svg>
-              </div>
-              <h3 class="portfolio-card__title">Shutterstock</h3>
-              <p class="portfolio-card__description">Studio AtoZ — stock photography, vectors, and design elements for
-                commercial use.</p>
-              <span class="portfolio-card__cta">View Contributor Profile →</span>
+            <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer"
+              class="btn btn--secondary" id="contact-btn-github">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="resume/Sangram-Adhikary-AI-Engineer-Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn--resume-highlight" id="contact-btn-resume">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- ── FOOTER ── -->
+      <!-- ── 10. FOOTER ── -->
       <footer class="footer">
-        <p class="footer__text">
-
-          Built with pure HTML, CSS & JavaScript. All text set in
-          <a href="https://rsms.me/inter/" target="_blank" rel="noopener noreferrer" class="inline-link">Inter</a>.
-        </p>
+        <div class="footer__content">
+          <p class="footer__text">
+            © 2026 <strong>Sangram Adhikary</strong>. Designed &amp; built by Sangram Adhikary.
+          </p>
+          <p class="footer__subtext">
+            Building at the intersection of AI, technology, and human-centered design.
+          </p>
+          <div class="footer__links">
+            <a href="https://github.com/SANGRAMADHIKARYsrc" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/sangramadhikary/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span>·</span>
+            <a href="mailto:sangram.adhikary.src@gmail.com">Email</a>
+            <span>·</span>
+            <a href="resume/Sangram-Adhikary-AI-Engineer-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </div>
+        </div>
       </footer>
 
     </main>
